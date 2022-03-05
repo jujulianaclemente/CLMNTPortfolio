@@ -8,6 +8,7 @@ nav {
   align-items: center;
   margin: 0.5em 5em;
   font-family: 'Roboto';
+  
 }
 
 ul {
@@ -24,9 +25,35 @@ nav #icon img {
   width: 4em;
 }
 
-nav #languages {
+nav #languages a{
+  font-family: "Roboto";
+  color: #EFEFEF;
   width: 4em;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  position: relative;
 }
+
+a #languages::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a #languages:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 
 #spin-ball {
 position: absolute;
@@ -51,6 +78,14 @@ margin-right: auto;
 display: inline-block;
 position: absolute;
 top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#iconScroll{
+position: absolute;
+right: 50%;
+top: 96%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
