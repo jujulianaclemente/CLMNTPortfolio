@@ -6,7 +6,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 5em;
+  margin: 0.5em 5em;
   font-family: 'Roboto';
 }
 
@@ -26,6 +26,33 @@ nav #icon img {
 
 nav #languages {
   width: 4em;
+}
+
+#spin-ball {
+position: absolute;
+left: 50%;
+right: 50%;
+bottom: 86.2%;
+display: inline-block;
+mix-blend-mode: difference;
+opacity: 0.8;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#goingFurther{
+position: absolute;
+width: 61.5rem;
+height: 9rem;
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 .tag {
