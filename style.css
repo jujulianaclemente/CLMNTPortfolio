@@ -2,12 +2,17 @@ body{
 background-color: #151515;
 }
 
+.header-intro{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 nav {
   color: #EFEFEF;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5em 5em;
+  margin: 0.5em;
   font-family: 'Roboto';
   white-space: nowrap;
   flex-wrap: nowrap;
@@ -69,7 +74,7 @@ nav #navLinks a {
   flex-wrap: nowrap;
   text-decoration: none;
   position: relative;
-  top:1rem;
+  top: 1.8rem;
   font-weight: 100;
   margin-right: auto;
   margin-left: auto;
@@ -130,6 +135,43 @@ right: 50%;
 top: 96%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+
+#smileFace{
+  position: absolute;
+  width: 7.75rem;
+  height: 7.75rem;
+  left: 68rem;
+  top: 62rem;
+  margin: 0.5em 5em;
+  
+}
+
+#clmnt-text{
+  position: absolute;
+  width: 4.44rem;
+  height: 3.5rem;
+  left: 10.5rem;
+  top: 64rem;
+  color: #EFEFEF;
+  font-family: Galgo;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+#heyStranger-text{
+  position: absolute;
+  width: 30.56rem;
+  height: 3.5rem;
+  left: 10.5rem;
+  top: 74rem;
+  color: #EFEFEF;
+  font-family: Galgo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
 }
 
 .tag {
