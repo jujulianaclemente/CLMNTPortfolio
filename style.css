@@ -3,12 +3,15 @@ background-color: #151515;
 }
 
 nav {
+  color: #EFEFEF;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.5em 5em;
   font-family: 'Roboto';
-  
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
 }
 
 ul {
@@ -19,6 +22,7 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+  list-style-type: none;
 }
 
 nav #icon img {
@@ -27,21 +31,23 @@ nav #icon img {
 
 nav #languages a{
   font-family: "Roboto";
+  margin: 0.3rem;
   color: #EFEFEF;
   width: 4em;
   white-space: nowrap;
   flex-wrap: nowrap;
   text-decoration: none;
   position: relative;
+  font-weight: 100;
 }
 
-a #languages::before {
+nav #languages a::before {
   content: '';
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 0.1rem;
     border-radius: 4px;
-    background-color: #18272F;
+    background-color: #EFEFEF;
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -49,11 +55,47 @@ a #languages::before {
     transition: transform .3s ease-in-out;
 }
 
-a #languages:hover::before {
+nav #nlanguages a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
+nav #navLinks a {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #EFEFEF;
+  width: 4em;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  position: relative;
+  top:1rem;
+  font-weight: 100;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  display: table;
+  margin-top: 0.8rem;
+}
+
+nav #navLinks a::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    border-radius: 4px;
+    background-color: #EFEFEF;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav #navLinks a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
 
 #spin-ball {
 position: absolute;
