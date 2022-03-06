@@ -3,8 +3,8 @@ background-color: #151515;
 }
 
 .header-intro{
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 nav {
@@ -137,22 +137,26 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+.heyStranger{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 #smileFace{
   position: absolute;
   width: 7.75rem;
   height: 7.75rem;
-  left: 68rem;
-  top: 62rem;
-  margin: 0.5em 5em;
-  
+  display: inline-block;
+  left: 72rem;
+  top: 56rem;
+  justify-content: right;
 }
 
 #clmnt-text{
   position: absolute;
   width: 4.44rem;
   height: 3.5rem;
-  left: 10.5rem;
-  top: 64rem;
+  top: 60rem;
   color: #EFEFEF;
   font-family: Galgo;
   font-weight: normal;
@@ -164,14 +168,39 @@ transform: translate(-50%, -50%);
   position: absolute;
   width: 30.56rem;
   height: 3.5rem;
-  left: 10.5rem;
-  top: 74rem;
+  top: 67rem;
   color: #EFEFEF;
   font-family: Galgo;
   font-style: italic;
   font-weight: normal;
   font-size: 3.5rem;
   line-height: 3.5rem;
+}
+
+#productDesigner-text{
+  position: absolute;
+  width: 54rem;
+  height: 9rem;
+  top: 68rem;
+  font-family: Galgo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 9rem;
+  line-height: 144px;
+  color: #EFEFEF;
+}
+
+#aboutme-text{
+  position: absolute;
+  width: 73.5rem;
+  height: 23.69rem;
+  top: 86rem;
+  font-family: Roboto;
+  font-style: thin;
+  font-weight: 80;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #EFEFEF;
 }
 
 .tag {
